@@ -5,9 +5,12 @@ public class Arithmetic {
         
         System.out.println("Planed start");
 
-        System.out.println(2);
+        try{System.out.println(2);
         System.out.println(10/0);
-        
+        }catch(ArithmeticException e){
+            System.out.println("Responsible Exception:"+e);
+        }
+        System.out.println("Planed stop");
     }
     
 }
