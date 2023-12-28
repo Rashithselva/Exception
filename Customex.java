@@ -15,6 +15,15 @@ public class Customex {
                 System.out.println("your age is below 18 ,you are not eligible");
             }
         }
+        else if(age>40){
+            try{
+                throw new OverageException ();
+            }catch(OverageException e){
+                System.out.println("Yout age above 40,you are not eligible");
+            }
+            
+        }
+       
     }
     
 }
