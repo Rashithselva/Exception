@@ -19,11 +19,13 @@ public class Customex {
             try{
                 throw new OverageException ();
             }catch(OverageException e){
-                System.out.println("Yout age above 40,you are not eligible");
+                System.out.println("Your age above 40,you are not eligible");
             }
             
         }
-       
+        else{
+            System.out.println("You are eligible,let's move to next step");
+        }
     }
     
 }
